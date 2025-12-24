@@ -2,8 +2,6 @@
 
 1. Check Existing SSH Keys
 ```
-```
-```
 ls -al ~/.ssh
 ```
 

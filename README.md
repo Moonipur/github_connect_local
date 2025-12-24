@@ -10,4 +10,20 @@ ls -al ~/.ssh
 ssh-keygen -t ed25519 -C "your.email@example.com"
 ```
 
+3. Add SSH Public Key to GitHub
+```
+cat ~/.ssh/id_ed25519.pub
+```
+
+4. Test SSH Connection to GitHub
+```
+ssh -T git@github.com
+```
+
+5. Use SSH with Git Repositories
+```
+git clone git@github.com:USERNAME/REPOSITORY.git
+git remote set-url origin git@github.com:USERNAME/REPOSITORY.git
+git remote -v
+```
 
